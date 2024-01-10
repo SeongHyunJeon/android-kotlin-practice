@@ -7,8 +7,8 @@ import java.text.NumberFormat
 
 class MainActivity : AppCompatActivity() {
 
-    //ID를 가진 모든 뷰들에 대한 참조를 갖는 뷰 바인딩 선언.
-    private lateinit var binding: ActivityMainBinding //데이터 바인딩 라이브러리를 사용하기 위한 결합 클래스는 XML파일의 이름을 파스칼 표기법으로 변환하고 이름 끝에 'Binding'을 추가한 형태.
+    //XML 파일과 코드 사이의 연결을 제공하는 결합 클래스로 XML파일의 이름을 파스칼 표기법으로 변환하고 이름 끝에 'Binding'을 추가한 형태.
+    private lateinit var binding: ActivityMainBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
