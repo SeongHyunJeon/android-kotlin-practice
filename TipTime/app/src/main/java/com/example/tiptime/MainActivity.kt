@@ -1,7 +1,11 @@
 package com.example.tiptime
 
+import android.content.Context
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.KeyEvent
+import android.view.View
+import android.view.inputmethod.InputMethodManager
 import com.example.tiptime.databinding.ActivityMainBinding
 import java.text.NumberFormat
 
@@ -15,10 +19,11 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater) //activity_main.xml의 View에 접근하기 위한 ViewBinding 객체 생성.
         setContentView(binding.root) //binding.root는 해당 뷰들을 감싸고 있는 ConstraintLayout을 의미.
         binding.calculateButton.setOnClickListener{ calculateTip() } //팁을 계산하는 버튼에 대한 이벤트 설정.
+        binding.costOfServiceEditText.setOnKeyListener { view, keyCode, _ -> handleKeyEvent(view, keyCode) }
     }
 
     private fun calculateTip() {
-        val stringInTextField = binding.costOfService.text //TextField의 입력값은 String이 아닌 Editable이지만 toString()으로 변환 가능.
+        val stringInTextField = binding.costOfServiceEditText.text //TextField의 입력값은 String이 아닌 Editable이지만 toString()으로 변환 가능.
         val cost = stringInTextField.toString().toDoubleOrNull()
         if(cost == null) {
             binding.tipResult.text = ""
@@ -40,12 +45,15 @@ class MainActivity : AppCompatActivity() {
         val formattedTip = NumberFormat.getCurrencyInstance().format(tip) //통화 양식을 입힌 금액 저장.
         binding.tipResult.text = getString(R.string.tip_amount, formattedTip) //출력.
     }
-}
 
-/*
-buildFeatures {
-    viewBinding = true
+    private fun handleKeyEvent(view: View, keyCode: Int): Boolean { //keyCode 입력 매개변수가 KeyEvent.KEYCODE_ENTER와 같은 경우 터치 키보드를 숨기는 비공개 도우미 함수
+        if (keyCode == KeyEvent.KEYCODE_ENTER) {
+            // Hide the keyboard
+            val inputMethodManager =
+                getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
+            inputMethodManager.hideSoftInputFromWindow(view.windowToken, 0)
+            return true
+        }
+        return false
+    }
 }
-
-뷰 바인더를 사용하기 위해 모듈 범위의 Gradle에서 android 섹션에 추가.
- */
