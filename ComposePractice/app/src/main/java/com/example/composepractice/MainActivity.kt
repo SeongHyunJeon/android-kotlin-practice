@@ -142,10 +142,3 @@ fun GreetingPreview() {
         composeTutorial(Modifier.fillMaxSize())
     }
 }
-
-/*
-수정자 Modifier를 이용한 연산들은 순서에 영향을 받는다. <패딩을 적용하고 백그라운드를 적용하는 것과 그 반대의 결과가 다르다.>
-Text(textAlign)의 Justify는 텍스트를 너비의 여백에 맞추어 정렬한다.
-Modifier.weight()로 해당 요소가 상위 컨테이너에서 차지하는 공간의 가중치를 설정할 수 있다.
-
- */
