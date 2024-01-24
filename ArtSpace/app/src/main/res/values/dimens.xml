@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="padding_small">8dp</dimen>
+    <dimen name="padding_medium">16dp</dimen>
+    <dimen name="padding_large">24dp</dimen>
+
+    <dimen name="title_padding_top">36dp</dimen>
+    <dimen name="information_padding_top">48dp</dimen>
+    <dimen name="button_padding_bottom">36dp</dimen>
+    <dimen name="picture_height">320dp</dimen>
+    <dimen name="card_elevation">16dp</dimen>
+    <dimen name="information_height">120dp</dimen>
+    <dimen name="information_width">320dp</dimen>
+    <dimen name="information_inside_height">88dp</dimen>
+    <dimen name="information_inside_width">289dp</dimen>
+    <dimen name="button1_width_height">76dp</dimen>
+    <dimen name="button1_padding_end">12dp</dimen>
+    <dimen name="button2_width_height">100dp</dimen>
+
+    <dimen name="title1_size">16sp</dimen>
+</resources>

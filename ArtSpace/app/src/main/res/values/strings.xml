@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Art Space</string>
+    <string name="title_part1">외국인 친구들이</string>
+    <string name="title_part2">좋아할 관광명소</string>
+
+    <string name="tourist_site_library">별마당 도서관</string>
+    <string name="tourist_site_myeongdong">명동 거리</string>
+    <string name="tourist_site_cheonggye">청계천</string>
+    <string name="tourist_site_hanok">북촌 한옥마을</string>
+    <string name="tourist_site_namdaemun">남대문 시장</string>
+    <string name="tourist_site_library_address">서울 강남구 영동대로 513 스타필드 코엑스몰 B1</string>
+    <string name="tourist_site_myeongdong_address">서울 중구 명동 2가</string>
+    <string name="tourist_site_cheonggye_address">서울 종로구 창신동</string>
+    <string name="tourist_site_hanok_address">서울 종로구 계동길 37</string>
+    <string name="tourist_site_namdaemun_address">서울 중구 남대문시장4길 21</string>
+
+    <string name="button_next">다음</string>
+    <string name="button_pre">이전</string>
+</resources>
