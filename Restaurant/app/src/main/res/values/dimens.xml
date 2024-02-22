@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="restaurant_list_item_row_padding">12dp</dimen>
+    <dimen name="restaurant_list_item_column_padding_start">16dp</dimen>
+    <dimen name="restaurant_list_item_icon_size">16dp</dimen>
+    <dimen name="restaurant_list_item_text_padding_top">4dp</dimen>
+    <dimen name="restaurant_home_top_bar_icon">36dp</dimen>
+    <dimen name="restaurant_home_into_detail_icon">28dp</dimen>
+    <dimen name="restaurant_row_icon_text_padding_start">4dp</dimen>
+    <dimen name="restaurant_row_icon_text_detail_padding_start">8dp</dimen>
+    <dimen name="restaurant_details_information_padding">12dp</dimen>
+    <dimen name="restaurant_details_information_padding_bottom">4dp</dimen>
+    <dimen name="restaurant_detail_information_icon_size">20dp</dimen>
+    <dimen name="restaurant_detail_comment_icon_size">16dp</dimen>
+    <dimen name="restaurant_detail_comment_column_padding">12dp</dimen>
+    <dimen name="restaurant_detail_comment_photo_size">84dp</dimen>
+    <dimen name="restaurant_detail_comment_card_padding">12dp</dimen>
+    <dimen name="restaurant_detail_comment_card_elevation">4dp</dimen>
+    <dimen name="restaurant_detail_comment_text_padding">8dp</dimen>
+    <dimen name="restaurant_detail_comment_row_padding_top">12dp</dimen>
+    <dimen name="restaurant_detail_comment_divider">1dp</dimen>
+    <dimen name="restaurant_navigation_permanent_width">240dp</dimen>
+    <dimen name="restaurant_navigation_permanent_incheon_symbol_padding">15dp</dimen>
+    <dimen name="restaurant_navigation_permanent_icon_size">70dp</dimen>
+    <dimen name="restaurant_navigation_permanent_item_padding_bottom">15dp</dimen>
+</resources>

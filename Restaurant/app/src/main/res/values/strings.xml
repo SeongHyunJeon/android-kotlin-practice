@@ -1,0 +1,103 @@
+<resources>
+    <string name="app_name">인천 맛집:130kg 돼지 보증</string>
+
+    <string name="navigation_tab_seogu">서구</string>
+    <string name="navigation_tab_junggu">중구</string>
+    <string name="navigation_tab_donggu">동구</string>
+    <string name="navigation_tab_namdonggu">남동구</string>
+    <string name="navigation_tab_bupyeonggu">부평구</string>
+    <string name="navigation_tab_yeonsugu">연수구</string>
+    <string name="navigation_tab_michuholgu">미추홀</string>
+    <string name="navigation_tab_gyeyanggu">계양구</string>
+
+    <string name="top_app_bar_name">인천 맛집: %s!</string>
+    <string name="top_app_bar_back_button">뒤로 버튼</string>
+
+    <string name="detail_map_description">식당 지도</string>
+    <string name="home_into_detail_button_description">세부 사항 보기</string>
+
+    <string name="jangteo_name">장터 삼겹살</string>
+    <string name="jangteo_signature">녹차 삼겹살</string>
+    <string name="jangteo_number">032-583-8721</string>
+    <string name="jangteo_address_simple">인천 서구 가좌동</string>
+    <string name="jangteo_address_detail">인천 서구 장고개로 284 1층 장터삼겹살</string>
+    <string name="jangteo_openinghours_weekday">평일 16:00-23:00</string>
+    <string name="jangteo_openinghours_weekend">주말 11:00-23:00</string>
+    <string name="jangteo_customer1_name">김*자</string>
+    <string name="jangteo_customer1_visit_day">23.10.20 금</string>
+    <string name="jangteo_customer1_comment">가성비도 좋고 편하게 셀프바를 이용할 수 있어서 좋았어요.</string>
+    <string name="jangteo_customer2_name">한*미</string>
+    <string name="jangteo_customer2_visit_day">23.10.24 화</string>
+    <string name="jangteo_customer2_comment">녹차 삼겹살이 제일 맛있고, 볶음밥을 셀프로 볶아 먹을 수 있었어요.</string>
+    <string name="jangteo_customer3_name">최*로</string>
+    <string name="jangteo_customer3_visit_day">24.02.14 수</string>
+    <string name="jangteo_customer3_comment">옛날 노포 분위기 나면서 편한 분위기에 가격도 저렴해요.</string>
+
+    <string name="araenyeok_name">아랜물닭갈비</string>
+    <string name="araenyeok_signature">물닭갈비</string>
+    <string name="araenyeok_number">032-577-0070</string>
+    <string name="araenyeok_address_simple">인천 서구 석남동</string>
+    <string name="araenyeok_address_detail">인천 서구 가정로 216 신화메트로타운 2층</string>
+    <string name="araenyeok_openinghours_weekday">평일 11:00-23:00</string>
+    <string name="araenyeok_openinghours_weekend">주말 11:00-23:00</string>
+    <string name="araenyeok_customer1_name">조*욱</string>
+    <string name="araenyeok_customer1_visit_day">23.10.20 금</string>
+    <string name="araenyeok_customer1_comment">매장이 넓고 배부르게 먹을 수 있어서 좋아요.</string>
+    <string name="araenyeok_customer2_name">서*현</string>
+    <string name="araenyeok_customer2_visit_day">23.10.24 화</string>
+    <string name="araenyeok_customer2_comment">닭볶음탕과는 다른 신비한 맛이었어요.</string>
+    <string name="araenyeok_customer3_name">박*철</string>
+    <string name="araenyeok_customer3_visit_day">24.02.14 수</string>
+    <string name="araenyeok_customer3_comment">추운 날 먹으면 딱 좋은 음식 같아요!</string>
+
+    <string name="jincheon_name">진천토종순대</string>
+    <string name="jincheon_signature">순댓국</string>
+    <string name="jincheon_number">032-574-0798</string>
+    <string name="jincheon_address_simple">인천 서구 가좌동</string>
+    <string name="jincheon_address_detail">인천 서구 신진말로 37 현신빌딩</string>
+    <string name="jincheon_openinghours_weekday">평일 10:00-21:40 [브레이크 타임 존재]</string>
+    <string name="jincheon_openinghours_weekend">주말 10:00-21:40</string>
+    <string name="jincheon_customer1_name">임*혁</string>
+    <string name="jincheon_customer1_visit_day">23.10.20 금</string>
+    <string name="jincheon_customer1_comment">제 인생 순대국 집이에요.</string>
+    <string name="jincheon_customer2_name">추*섭</string>
+    <string name="jincheon_customer2_visit_day">23.10.24 화</string>
+    <string name="jincheon_customer2_comment">매운 거 좋아하시는 분들은 매운 맛 드세요!</string>
+    <string name="jincheon_customer3_name">최*아</string>
+    <string name="jincheon_customer3_visit_day">24.02.14 수</string>
+    <string name="jincheon_customer3_comment">깔끔하고 잡내가 없어요.</string>
+
+    <string name="cheongshill_name">청실홍실</string>
+    <string name="cheongshill_signature">메밀소바, 만두</string>
+    <string name="cheongshill_number">032-772-7760</string>
+    <string name="cheongshill_address_simple">인천 중구 신생동</string>
+    <string name="cheongshill_address_detail">인천 중구 우현로35번길 23-1</string>
+    <string name="cheongshill_openinghours_weekday">평일 11:30-20:20 [월요일 정기 휴무]</string>
+    <string name="cheongshill_openinghours_weekend">주말 11:30-20:20</string>
+    <string name="cheongshill_customer1_name">안*승</string>
+    <string name="cheongshill_customer1_visit_day">23.10.20 금</string>
+    <string name="cheongshill_customer1_comment">메뉴가 주문과 동시에 나왔어요!</string>
+    <string name="cheongshill_customer2_name">임*호</string>
+    <string name="cheongshill_customer2_visit_day">23.10.24 화</string>
+    <string name="cheongshill_customer2_comment">모밀도 모밀이지만 만두가 정말 맛있네요.</string>
+    <string name="cheongshill_customer3_name">전*호</string>
+    <string name="cheongshill_customer3_visit_day">24.02.14 수</string>
+    <string name="cheongshill_customer3_comment">웨이팅이 있지만 그럴만한 가치가 있습니다.</string>
+
+    <string name="inhyun_name">인현통닭삼계탕</string>
+    <string name="inhyun_signature">삼계탕, 전기통닭</string>
+    <string name="inhyun_number">0507-1391-8487</string>
+    <string name="inhyun_address_simple">인천 중구 인현동</string>
+    <string name="inhyun_address_detail">인천 중구 참외전로 134 1층</string>
+    <string name="inhyun_openinghours_weekday">평일 10:30-21:00 [월요일 정기 휴무]</string>
+    <string name="inhyun_openinghours_weekend">주말 10:30-21:00</string>
+    <string name="inhyun_customer1_name">김*범</string>
+    <string name="inhyun_customer1_visit_day">23.10.20 금</string>
+    <string name="inhyun_customer1_comment">매주 주말이면 전철을 타고 아내와 함께 방문하는 곳.</string>
+    <string name="inhyun_customer2_name">김*경</string>
+    <string name="inhyun_customer2_visit_day">23.10.24 화</string>
+    <string name="inhyun_customer2_comment">몸보신을 위해 자주 찾습니다.</string>
+    <string name="inhyun_customer3_name">이*필</string>
+    <string name="inhyun_customer3_visit_day">24.02.14 수</string>
+    <string name="inhyun_customer3_comment">부연 설명이 필요 없는 오랜 전통의 인천 맛집.</string>
+</resources>
