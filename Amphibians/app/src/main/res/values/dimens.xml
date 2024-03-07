@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="card_elevation">8dp</dimen>
+    <dimen name="card_padding">8dp</dimen>
+    <dimen name="card_text_name_padding_end">4dp</dimen>
+    <dimen name="card_text_description_padding">4dp</dimen>
+    <dimen name="card_column_row_padding_start">8dp</dimen>
+    <dimen name="success_screen_grid_padding_bottom">8dp</dimen>
+</resources>
