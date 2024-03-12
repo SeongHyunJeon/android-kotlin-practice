@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="home_column_padding">40dp</dimen>
+    <dimen name="home_image_height">170dp</dimen>
+    <dimen name="home_image_clip">24dp</dimen>
+    <dimen name="home_image_padding_bottom">20dp</dimen>
+    <dimen name="home_textfield_padding_bottom">20dp</dimen>
+    <dimen name="home_button_width">100dp</dimen>
+    <dimen name="home_button_padding_end">16dp</dimen>
+    <dimen name="detail_list_column_padding">4dp</dimen>
+    <dimen name="detail_list_row_padding">4dp</dimen>
+    <dimen name="detail_list_card_height">400dp</dimen>
+    <dimen name="detail_list_card_padding">4dp</dimen>
+    <dimen name="detail_list_card_image_elevation">8dp</dimen>
+    <dimen name="detail_list_card_image_height">240dp</dimen>
+    <dimen name="detail_list_card_column_padding">4dp</dimen>
+    <dimen name="detail_list_title_padding_vertical">16dp</dimen>
+    <dimen name="detail_book_column_padding">16dp</dimen>
+    <dimen name="detail_book_column_row_padding_horizontal">16dp</dimen>
+    <dimen name="detail_book_image_padding_end">16dp</dimen>
+    <dimen name="detail_book_title_padding_vertical">8dp</dimen>
+    <dimen name="detail_book_publisher_padding_bottom">8dp</dimen>
+    <dimen name="detail_book_description_column_padding_top">16dp</dimen>
+    <dimen name="detail_book_description_intro_padding_bottom">8dp</dimen>
+</resources>

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Books Or Nothing</string>
+    <string name="home_textfield_label">Only By A Title</string>
+    <string name="home_button_search">Search</string>
+    <string name="home_button_eraser">Clear</string>
+    <string name="detail_search_text">"Books (%d)"</string>
+    <string name="detail_list_title">%s...</string>
+    <string name="detail_book_date_and_page">%s / p.%d</string>
+    <string name="detail_book_description_text_intro">책소개</string>
+</resources>
