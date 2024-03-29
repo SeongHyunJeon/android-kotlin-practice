@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Flight Search</string>
+    <string name="top_bar_title">항공편 검색</string>
+    <string name="textfield_placeholder_text">어떤 공항에서 출발 하나요?</string>
+    <string name="favorites_empty_message1">즐겨 찾는 항공편이 없습니다.</string>
+    <string name="favorites_empty_message2">공항 식별 코드, 이름으로 검색해보세요</string>
+    <string name="available_flights_message">%s에서 이용 가능한 항공편</string>
+    <string name="favorites_message">자주 이용하는 항공편</string>
+    <string name="related_airport_iata">%s:</string>
+</resources>
