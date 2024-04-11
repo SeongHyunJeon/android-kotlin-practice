@@ -5,113 +5,98 @@ import android.os.Bundle
 import android.view.View
 import android.widget.Button
 import android.widget.TextView
-import org.w3c.dom.Text
+import com.example.mycalculator.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
+    private lateinit var binding: ActivityMainBinding
+
     private var firstInput: Double = 0.0
     private var isTyping: Boolean = true
-    private var operator: String = ""
+    private  var operator: String = ""
 
-    private var tvInput: TextView? = null
+    private lateinit var tvInput: TextView
 
-    private var btnZero: Button? = null
-    private var btnOne: Button? = null
-    private var btnTwo: Button? = null
-    private var btnThree: Button? = null
-    private var btnFour: Button? = null
-    private var btnFive: Button? = null
-    private var btnSix: Button? = null
-    private var btnSeven: Button? = null
-    private var btnEight: Button? = null
-    private var btnNine: Button? = null
-    private var btnDot: Button? = null
-    private var btnPlus: Button? = null
-    private var btnMinus: Button? = null
-    private var btnDivide: Button? = null
-    private var btnMultiply: Button? = null
-    private var btnEqual: Button? = null
-    private var btnClear: Button? = null
+    private lateinit var btnZero: Button
+    private lateinit var btnOne: Button
+    private lateinit var btnTwo: Button
+    private lateinit var btnThree: Button
+    private lateinit var btnFour: Button
+    private lateinit var btnFive: Button
+    private lateinit var btnSix: Button
+    private lateinit var btnSeven: Button
+    private lateinit var btnEight: Button
+    private lateinit var btnNine: Button
+    private lateinit var btnDot: Button
+    private lateinit var btnPlus: Button
+    private lateinit var btnMinus: Button
+    private lateinit var btnDivide: Button
+    private lateinit var btnMultiply: Button
+    private lateinit var btnEqual: Button
+    private lateinit var btnClear: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
-        tvInput = findViewById(R.id.tv_input)
-        btnZero = findViewById(R.id.btn_zero)
-        btnOne = findViewById(R.id.btn_one)
-        btnTwo = findViewById(R.id.btn_two)
-        btnThree = findViewById(R.id.btn_three)
-        btnFour = findViewById(R.id.btn_four)
-        btnFive = findViewById(R.id.btn_five)
-        btnSix = findViewById(R.id.btn_six)
-        btnSeven = findViewById(R.id.btn_seven)
-        btnEight = findViewById(R.id.btn_eight)
-        btnNine = findViewById(R.id.btn_nine)
-        btnDot = findViewById(R.id.btn_dot)
-        btnPlus = findViewById(R.id.btn_plus)
-        btnMinus = findViewById(R.id.btn_minus)
-        btnDivide = findViewById(R.id.btn_divide)
-        btnMultiply = findViewById(R.id.btn_multiply)
-        btnEqual = findViewById(R.id.btn_equal)
-        btnClear = findViewById(R.id.btn_clear)
-        btnZero!!.setOnClickListener { onDigit(it) }
-        btnOne!!.setOnClickListener { onDigit(it) }
-        btnTwo!!.setOnClickListener { onDigit(it) }
-        btnThree!!.setOnClickListener { onDigit(it) }
-        btnFour!!.setOnClickListener { onDigit(it) }
-        btnFive!!.setOnClickListener { onDigit(it) }
-        btnSix!!.setOnClickListener { onDigit(it) }
-        btnSeven!!.setOnClickListener { onDigit(it) }
-        btnEight!!.setOnClickListener { onDigit(it) }
-        btnNine!!.setOnClickListener { onDigit(it) }
-        btnDot!!.setOnClickListener { onDot(it) }
-        btnPlus!!.setOnClickListener { onOperator(it) }
-        btnMinus!!.setOnClickListener { onOperator(it) }
-        btnDivide!!.setOnClickListener { onOperator(it) }
-        btnMultiply!!.setOnClickListener { onOperator(it) }
-        btnEqual!!.setOnClickListener { onCalculate() }
-        btnClear!!.setOnClickListener { onClear() }
+        binding.btnZero.setOnClickListener { onDigit(it) }
+        binding.btnOne.setOnClickListener { onDigit(it) }
+        binding.btnTwo.setOnClickListener { onDigit(it) }
+        binding.btnThree.setOnClickListener { onDigit(it) }
+        binding.btnFour.setOnClickListener { onDigit(it) }
+        binding.btnFive.setOnClickListener { onDigit(it) }
+        binding.btnSix.setOnClickListener { onDigit(it) }
+        binding.btnSeven.setOnClickListener { onDigit(it) }
+        binding.btnEight.setOnClickListener { onDigit(it) }
+        binding.btnNine.setOnClickListener { onDigit(it) }
+        binding.btnDot.setOnClickListener { onDot(it) }
+        binding.btnPlus.setOnClickListener { onOperator(it) }
+        binding.btnMinus.setOnClickListener { onOperator(it) }
+        binding.btnDivide.setOnClickListener { onOperator(it) }
+        binding.btnMultiply.setOnClickListener { onOperator(it) }
+        binding.btnEqual.setOnClickListener { onCalculate() }
+        binding.btnClear.setOnClickListener { onClear() }
     }
 
     private fun onDigit(view: View) {
         if(isTyping) {
-            tvInput!!.append((view as Button).text)
+            tvInput.append((view as Button).text)
         } else {
-            tvInput!!.text = ""
+            tvInput.text = ""
             isTyping = true
-            tvInput!!.text = (view as Button).text
+            tvInput.text = (view as Button).text
         }
     }
 
     private fun onDot(view: View) {
         if(isTyping) {
-            if(tvInput!!.text.contains('.').not()) {
+            if(tvInput.text.contains('.').not()) {
                 val lastLetter = try {
-                    tvInput!!.text.last()
+                    tvInput.text.last()
                 } catch (exception: NoSuchElementException) {
-                    tvInput!!.append("0.")
+                    tvInput.append("0.")
                     (view as Button).text.last()
                 }
 
                 if(lastLetter != '.') {
-                    tvInput!!.append((view as Button).text)
+                    tvInput.append((view as Button).text)
                 }
             }
         } else {
-            tvInput!!.text = ""
-            tvInput!!.append("0.")
+            tvInput.text = ""
+            tvInput.append("0.")
             isTyping = true
         }
     }
 
     private fun onCalculate() {
-        if(firstInput != 0.0 && tvInput!!.text.isNotEmpty()) {
-            val secondInput = tvInput!!.text.toString().toDouble()
+        if(firstInput != 0.0 && tvInput.text.isNotEmpty()) {
+            val secondInput = tvInput.text.toString().toDouble()
             when(operator) {
-                "+" -> { tvInput!!.text = (firstInput + secondInput).toString() }
-                "-" -> { tvInput!!.text = (firstInput - secondInput).toString() }
-                "/" -> { tvInput!!.text = (firstInput / secondInput).toString() }
-                "X" -> { tvInput!!.text = (firstInput * secondInput).toString() }
+                "+" -> { tvInput.text = (firstInput + secondInput).toString() }
+                "-" -> { tvInput.text = (firstInput - secondInput).toString() }
+                "/" -> { tvInput.text = (firstInput / secondInput).toString() }
+                "X" -> { tvInput.text = (firstInput * secondInput).toString() }
             }
             operator = ""
             firstInput = 0.0
@@ -120,11 +105,11 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun onOperator(view: View) {
-        if(tvInput!!.text.isNotEmpty()) {
+        if(tvInput.text.isNotEmpty()) {
             if(firstInput != 0.0 && isTyping) {
                 onCalculate()
             } else {
-                firstInput = tvInput!!.text.toString().toDouble()
+                firstInput = tvInput.text.toString().toDouble()
                 isTyping = false
             }
             operator = (view as Button).text.toString()
@@ -137,7 +122,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun onClear() {
         firstInput = 0.0
-        tvInput!!.text = ""
+        tvInput.text = ""
         operator = ""
     }
 
