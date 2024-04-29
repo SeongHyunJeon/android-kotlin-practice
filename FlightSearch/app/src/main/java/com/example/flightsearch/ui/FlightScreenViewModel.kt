@@ -11,13 +11,16 @@ import com.example.flightsearch.data.Airport
 import com.example.flightsearch.data.Favorite
 import com.example.flightsearch.data.FlightsAccessor
 import com.example.flightsearch.data.FlightsPreferencesAccessor
+import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.flow.update
 import kotlinx.coroutines.launch
+import javax.inject.Inject
 
-class FlightScreenViewModel(
+@HiltViewModel
+class FlightScreenViewModel @Inject constructor(
     private val flightsAccessor: FlightsAccessor,
     private val flightsPreferencesAccessor: FlightsPreferencesAccessor
 ): ViewModel() {
@@ -101,17 +104,17 @@ class FlightScreenViewModel(
     fun isFavorite(favorite: Favorite): Boolean =
         _uiState.value.favoriteAirports.contains(favorite)
 
-    companion object {
-        val Factory: ViewModelProvider.Factory = viewModelFactory {
-            initializer {
-                val application = this[APPLICATION_KEY] as FlightApplication
-                FlightScreenViewModel(
-                    application.container.flightsAccessor,
-                    application.container.flightsPreferencesAccessor
-                    )
-            }
-        }
-    }
+//    companion object {
+//        val Factory: ViewModelProvider.Factory = viewModelFactory {
+//            initializer {
+//                val application = this[APPLICATION_KEY] as FlightApplication
+//                FlightScreenViewModel(
+//                    application.container.flightsAccessor,
+//                    application.container.flightsPreferencesAccessor
+//                    )
+//            }
+//        }
+//    }
 }
 
 fun Airport.toFavorite(airport: Airport) =

@@ -1,5 +1,7 @@
 package com.example.flightsearch.data
 
+import javax.inject.Inject
+
 interface FlightsAccessor {
     suspend fun getAirport(iataCode: String): Airport
     suspend fun getAvailableAirports(iataCode: String): List<Airport>
@@ -10,7 +12,7 @@ interface FlightsAccessor {
     suspend fun getAllFavorites(): List<Favorite>
 }
 
-class FlightsRepository(
+class FlightsRepository @Inject constructor(
     val airportDao: AirportDao,
     val favoriteDao: FavoriteDao
 ): FlightsAccessor {

@@ -10,13 +10,14 @@ import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.catch
 import kotlinx.coroutines.flow.map
 import java.io.IOException
+import javax.inject.Inject
 
 interface FlightsPreferencesAccessor {
     suspend fun saveTextPreferences(text: String)
     val currentText: Flow<String>
 }
 
-class FlightsPreferencesRepository(private val dataStore: DataStore<Preferences>): FlightsPreferencesAccessor {
+class FlightsPreferencesRepository @Inject constructor(private val dataStore: DataStore<Preferences>): FlightsPreferencesAccessor {
 
     private companion object {
         val CURRENT_TEXT_KEY = stringPreferencesKey("current_text_key")

@@ -65,7 +65,7 @@ import com.example.flightsearch.ui.theme.Typography
 @Composable
 fun FlightScreen(
     modifier: Modifier = Modifier,
-    viewModel: FlightScreenViewModel = viewModel(factory = FlightScreenViewModel.Factory)
+    viewModel: FlightScreenViewModel
 ) {
     val uiState = viewModel.uiState.collectAsState()
     val scrollBehavior = TopAppBarDefaults.pinnedScrollBehavior()
