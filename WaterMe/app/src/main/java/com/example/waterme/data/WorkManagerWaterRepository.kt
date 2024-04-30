@@ -23,10 +23,13 @@ import androidx.work.WorkManager
 import androidx.work.workDataOf
 import com.example.waterme.model.Plant
 import com.example.waterme.worker.WaterReminderWorker
+import dagger.hilt.android.qualifiers.ApplicationContext
 import java.util.concurrent.TimeUnit
+import javax.inject.Inject
 
-class WorkManagerWaterRepository(context: Context) : WaterRepository {
-    private val workManager = WorkManager.getInstance(context)
+class WorkManagerWaterRepository @Inject constructor(
+    private val workManager: WorkManager
+) : WaterRepository {
 
     override val plants: List<Plant>
         get() = DataSource.plants

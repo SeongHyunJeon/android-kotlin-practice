@@ -61,7 +61,7 @@ import com.example.waterme.TWENTY_SECONDS
 import java.util.concurrent.TimeUnit
 
 @Composable
-fun WaterMeApp(waterViewModel: WaterViewModel = viewModel(factory = WaterViewModel.Factory)) {
+fun WaterMeApp(waterViewModel: WaterViewModel) {
     val layoutDirection = LocalLayoutDirection.current
     WaterMeTheme {
         Surface(

@@ -17,14 +17,18 @@
 package com.example.waterme
 
 import android.app.Application
-import com.example.waterme.data.AppContainer
-import com.example.waterme.data.DefaultAppContainer
+import androidx.hilt.work.HiltWorkerFactory
+import androidx.work.Configuration
+import dagger.hilt.android.HiltAndroidApp
+import javax.inject.Inject
 
-class WaterMeApplication : Application() {
-    /** AppContainer instance used by the rest of classes to obtain dependencies */
-    lateinit var container: AppContainer
-    override fun onCreate() {
-        super.onCreate()
-        container = DefaultAppContainer(this)
-    }
+@HiltAndroidApp
+class WaterMeApplication : Application(), Configuration.Provider {
+    @Inject
+    lateinit var workerFactory: HiltWorkerFactory
+
+    override fun getWorkManagerConfiguration() =
+        Configuration.Builder()
+            .setWorkerFactory(workerFactory)
+            .build()
 }
