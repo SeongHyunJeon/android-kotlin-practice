@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Firebase</string>
+    <string name="user_list">List</string>
+    <string name="user_add">Add</string>
+    <string name="user_edit">Edit</string>
+    <string name="user_delete_all">Delete All Users</string>
+    <string name="navigate_back">Back</string>
+    <string name="floating_button">Add User</string>
+    <string name="user_swipe_button_edit">Edit</string>
+    <string name="user_swipe_button_delete">Delete</string>
+    <string name="form_label_user_name">Name*</string>
+    <string name="form_label_user_phoneNum">Phone Number*</string>
+    <string name="form_label_user_age">Age*</string>
+    <string name="form_button_update">Update</string>
+    <string name="form_button_add">Add</string>
+</resources>
